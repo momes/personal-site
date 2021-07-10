@@ -30,6 +30,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.nav-link {
+	font-size: 1.5em;
+}
 body {
 	line-height: 1;
 }
@@ -43,11 +46,20 @@ ol, ul {
 .inline-links-li {
 	display: flex;
 }
-
+.divider {
+	padding: 0px; 
+	margin: 0px;
+	min-height: 15px;
+	background-color:#2d3142;
+}
 .lang-container {
 	border: 4px solid #404157;
-	padding: 0% 3% 0% 3%;
+	padding: 2% 3% 0% 3%;
 	border-radius: 10px 50px 10px 50px;
+}
+
+.lang-list {
+	margin-bottom: 3%;
 }
 blockquote, q {
 	quotes: none;
@@ -63,20 +75,32 @@ table {
 	border-spacing: 0;
 }
 
+.experience-p {
+	color: white;
+}
+
 .bold {
-	color:rgba(225, 223, 231, 0.9)
+	color:rgb(255, 255, 255);
+	font-weight: bold;
 }
 
 body {
-  background: #003;
+  background: rgb(243, 243, 243);
 }
 
 .about-me {
 	padding: 2%;
+	margin-bottom: 0px;
+}
+
+.resume-small {
+	font-size: .5em;
 }
 
 .languages {
 	padding-left: 2%;
+	margin: 5px 0px 5px 0px;
+	vertical-align: baseline;
 }
 
 .intro-msg {
@@ -3587,7 +3611,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #EF8354;
+		background:rgb(239 131 84);;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3633,6 +3657,7 @@ input, select, textarea {
 		#sidebar nav > ul {
 			list-style: none;
 			padding: 0;
+			color:rgba(18, 11, 36, 0.9) !important;
 		}
 
 			#sidebar nav > ul > li {
@@ -3648,6 +3673,7 @@ input, select, textarea {
 				opacity: 1;
 				padding: 0;
 				position: relative;
+				color:rgba(18, 11, 36, 0.9) !important;
 			}
 
 				#sidebar nav > ul > li:first-child {
@@ -3861,6 +3887,7 @@ input, select, textarea {
 			-ms-transform: translateY(2em);
 			transform: translateY(2em);
 			opacity: 0;
+			color:rgba(18, 11, 36, 0.9) !important;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3944,7 +3971,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-color: #7486a5;
+		background-color: #9baac5;
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
